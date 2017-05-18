@@ -28,6 +28,14 @@
     MathJax under Safari.
 */
 
+/* ---- body and "page" layout ---- */
+body
+{
+    font-size:20px;
+    line-height:30px;
+    margin: 30px 30px
+}
+
 /* ---- Front Matter ---- */
 
 /* Pandoc header DIV. Contains .title, .author and .date. Comes before div#TOC. 
@@ -255,9 +263,7 @@ img
 
 div.figure, figure /* Pandoc figure-style image container */
     {
-    /* Center the image and caption */
-    margin-left:  auto;
-    margin-right: auto;
+    /* Don't Center the image and caption */
     text-align: center;
     font-style: italic;
     font-size:   small;
@@ -393,9 +399,7 @@ table
     border-top:    2pt solid black; /* The caption on top will not have a bottom-border */
     border-bottom: 2pt solid black;
 
-    /* Center */
-    margin-left:  auto;
-    margin-right: auto;
+    /* no center! */
     }
     
 thead, th /* Entire table header */
