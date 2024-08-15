@@ -108,18 +108,49 @@ div#TOC, nav#TOC
 h1, h2, h3, h4, h5, h6
     {
     font-family: "Helvetica Neue", Helvetica, "Liberation Sans", Calibri, Arial, sans-serif; /* Sans-serif headers */
-
-    /* font-family: "Liberation Serif", "Georgia", "Times New Roman", serif; /* Serif headers */
-
+    margin: 0;
     page-break-after: avoid; /* Firefox, Chrome, and Safari do not support the property value "avoid" */
     }
 
-/* bigger header are colored */
+/* bigger headers are colored */
 
 h1, h2, h3, h4
 {
     color: #222299;
 }
+
+h1 {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  margin-top: 0.9em;
+  margin-bottom: 0.9em; }
+
+h2 {
+  font-size: 1.375em;
+  line-height: 1.3em;
+  margin-top: 0.9em; 
+  margin-bottom: 0.8em; }
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1.05em;
+  margin-bottom: 1.05em; }
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.1666666666666667em;
+  margin-bottom: 1.1666666666666667em; }
+
+h5 {
+  font-size: 1.15em;
+  line-height: 1.3em;
+  margin: 1.3em 0; }
+
+h6 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 1.5em 0; }
+
 
 /* Pandoc with --section-divs option */
 
@@ -131,8 +162,8 @@ div div, section section /* Nested sections */
 p {}
 
 blockquote
-    { 
-    font-style: italic;
+    {
+        font-size: small; 
     }
 
 li /* All list items */
